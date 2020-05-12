@@ -8,7 +8,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 
 if (isset($response_recaptcha) && $response_recaptcha){
 	var_dump($_POST);
-	$secret = "6LdK2DkUAAAAAMYDyUlrleRl6_bOTpgLWKQobvpk";
+	$secret = "";
 	$ip = $_SERVER["REMOTE_ADDR"];
 	$validation_server = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response_recaptcha&remoteip=$ip");
 	var_dump($validation_server);
