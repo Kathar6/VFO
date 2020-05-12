@@ -1,0 +1,86 @@
+function iniciar(){
+	var boton= document.getElementById('caja_p');
+	var seccion= document.getElementById('caja_1');
+	boton.style.transition='opacity 2s ease';
+	boton.style.opacity=0;
+	seccion.style.transition='opacity 2s ease';
+	seccion.style.opacity=1;
+	seccion.style.transition='top 1s ease';
+	seccion.style.top='30%';
+}
+function iniciar2(){
+	var boton= document.getElementById('caja_p');
+	var seccion= document.getElementById('caja_1f');
+	var bloque2 = document.getElementById('f3');
+	seccion.style.transition='opacity 2s ease';
+	seccion.style.opacity=1;
+	seccion.style.transition='top 1s ease';
+	seccion.style.top='36%';
+	bloque2.style.transition='opacity 2s ease';
+	bloque2.style.opacity=1;
+	bloque2.style.transition='top 1s ease';
+	bloque2.style.top='20%';
+	boton.style.transition='opacity 1s ease';
+	boton.style.opacity=0;
+}
+function fin(){
+	var boton= document.getElementById('caja_p');
+	var seccion= document.getElementById('caja_1f');
+	var bloque2= document.getElementById('f3');
+	boton.style.transition='opacity 2s ease';
+	boton.style.opacity=1;
+	seccion.style.transition='opacity 2s ease';
+	seccion.style.opacity=0;
+	seccion.style.transition='top 1s ease';
+	seccion.style.top='-40%';
+	bloque2.style.transition='opacity 2s ease';
+	bloque2.style.opacity=0;
+	bloque2.style.transition='top 1s ease';
+	bloque2.style.top='-60%';
+}
+function menu() {
+	var flecha= document.getElementById('menu2');
+	var menu= document.getElementById('menu');
+	flecha.style.transition='top 0.5s ease';
+	flecha.style.top='10%';
+	menu.style.transition='top 0.5s ease';
+	menu.style.top='0%';
+}
+function cmenu() {
+	var flecha= document.getElementById('menu2');
+	var menu= document.getElementById('menu');
+	menu.style.transition='top 0.5s ease';
+	menu.style.top='-10.5%';
+	flecha.style.transition='top 0.5s ease';
+	flecha.style.top='0%';
+	
+}
+function cmenu2() {
+	var flecha= document.getElementById('menu2');
+	var menu= document.getElementById('menu');
+	menu.style.transition='top 0.5s ease';
+	menu.style.top='-10.5%';	
+}
+
+
+function opciones() {
+	var profesor = document.getElementById('radio1');
+	var estudiante = document.getElementById('radio2');
+	var acudiente = document.getElementById('radio3');
+	var op1 = document.getElementById('op1');
+	var op2 = document.getElementById('op2');
+	var op3 = document.getElementById('op3');
+	if (profesor.checked) {
+		op1.style.display='inline-block';
+		op2.style.display='none';
+		op3.style.display='none';
+	}else if (estudiante.checked){
+		op1.style.display='none';
+		op2.style.display='inline-block';
+		op3.style.display='none';				
+	}else if (acudiente.checked) {
+		op1.style.display='none';
+		op2.style.display='none';
+		op3.style.display='inline-block';				
+	}
+}
